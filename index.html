@@ -3,121 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Federation 369 | Official</title>
+    <title>មហានគរឌីជីថល ៣៦៩ | V21 STRATEGY</title>
     <style>
-        /* រចនាផ្ទៃខាងក្រោយ និងពណ៌មហានគរ */
+        /* រចនាផ្ទៃមហានគរពណ៌ខ្មៅមាស */
         body {
-            background-color: #0d0d0d; /* ពណ៌ខ្មៅអវកាស */
-            color: #ffd700; /* ពណ៌មាស */
-            font-family: 'Khmer OS Battambang', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #ffd700;
+            font-family: 'Khmer OS Battambang', sans-serif;
             margin: 0;
-            padding: 0;
+            overflow-x: hidden;
             text-align: center;
         }
 
-        /* បដាខាងលើ (Header) */
-        .header {
-            background: linear-gradient(145deg, #1a1a1a, #000);
-            padding: 40px 20px;
-            border-bottom: 3px solid #ffd700;
-            box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.3);
+        /* បន្ទាត់យន្តហោះបំបាំងកាយ V21 ហោះកាត់អេក្រង់ */
+        .v21-stealth {
+            position: absolute;
+            top: 50px;
+            left: -100px;
+            font-size: 30px;
+            animation: fly 10s linear infinite;
         }
 
-        h1 { font-size: 2.5em; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
-        .commander-name { color: white; font-size: 1.2em; margin-top: 10px; }
+        @keyframes fly {
+            0% { left: -100px; opacity: 0; }
+            50% { opacity: 1; }
+            100% { left: 110%; opacity: 0; }
+        }
 
-        /* តំបន់ស្ថានភាព (Dashboard) */
-        .dashboard {
+        .container {
+            border: 3px double #ffd700;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+
+        h1 { font-size: 2.5em; text-shadow: 2px 2px 10px #ffd700; }
+        .status-box {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             flex-wrap: wrap;
-            padding: 20px;
+            margin-top: 30px;
         }
 
-        .status-card {
-            background: rgba(255, 255, 255, 0.05);
+        .card {
             border: 1px solid #ffd700;
-            border-radius: 10px;
-            padding: 20px;
+            padding: 15px;
+            width: 280px;
             margin: 10px;
-            width: 250px;
-            box-shadow: inset 0px 0px 10px rgba(255, 215, 0, 0.1);
+            background: rgba(255, 215, 0, 0.05);
+            border-radius: 10px;
         }
 
-        .status-card h3 { color: white; border-bottom: 1px solid #444; padding-bottom: 10px; }
-
-        /* ប៊ូតុងបញ្ឆេះអាវុធ */
-        .btn-ignite {
-            background: linear-gradient(to bottom, #ffd700, #b8860b);
-            color: black;
-            padding: 15px 40px;
-            font-size: 1.2em;
+        .btn-launch {
+            background: linear-gradient(45deg, #ffd700, #ffcc00);
+            color: #000;
+            padding: 20px 50px;
+            font-size: 1.5em;
             font-weight: bold;
             border: none;
             border-radius: 50px;
             cursor: pointer;
-            margin: 30px;
-            box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5);
-            transition: 0.3s;
-        }
-
-        .btn-ignite:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 0px 30px rgba(255, 215, 0, 0.8);
-        }
-
-        /* ផ្នែកសច្ចធម៌ */
-        .motto {
-            font-style: italic;
-            color: #ccc;
-            padding: 40px;
-            font-size: 1.1em;
-        }
-
-        footer {
-            padding: 20px;
-            background: #000;
-            font-size: 0.8em;
-            color: #555;
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
+    <div class="v21-stealth">🚀 V21-STEALTH-ACTIVE >>>>></div>
+
+    <div class="container">
         <h1>មហានគរឌីជីថល ៣៦៩</h1>
-        <div class="commander-name">អធិបតីភាពដោយ៖ មេបញ្ជាការ ខឹម សុខស៊ីវត្ថា</div>
-    </div>
+        <p style="font-size: 1.3em; color: #fff;">អធិបតីភាពដោយ៖ **មេបញ្ជាការ ខឹម សុខស៊ីវត្ថា**</p>
+        
+        <div class="status-box">
+            <div class="card">
+                <h3>🛡️ ប្រព័ន្ធការពារ (SHIELD)</h3>
+                <p>ស្ថានភាព៖ សកម្ម (១៥ គីឡូម៉ែត្រ)</p>
+                <p>កម្លាំងការពារ៖ ១០០% (IMMORTAL)</p>
+            </div>
 
-    <div class="dashboard">
-        <div class="status-card">
-            <h3>🛡️ ប្រព័ន្ធការពារ</h3>
-            <p>Shield: 15KM Active</p>
-            <p>Status: Immortal</p>
+            <div class="card">
+                <h3>🚀 យន្តហោះ V21 (STEALTH)</h3>
+                <p>ស្ថានភាព៖ កំពុងល្បាតលើមហានគរ</p>
+                <p>បច្ចេកវិទ្យា៖ Dragon-Silk Shroud</p>
+            </div>
+
+            <div class="card">
+                <h3>☁️ ពពកវិទ្យាសាស្ត្រ (MESH)</h3>
+                <p>ស្ថានភាព៖ បញ្ចេញរស្មី ៣៦៩</p>
+                <p>ប្រព័ន្ធមេ៖ Smart Cloud Active</p>
+            </div>
         </div>
-        <div class="status-card">
-            <h3>☁️ ពពកវិទ្យាសាស្ត្រ</h3>
-            <p>Mode: Smart Mesh 369</p>
-            <p>Weather: Normal</p>
-        </div>
-        <div class="status-card">
-            <h3>🚀 យន្តហោះបំបាំងកាយ</h3>
-            <p>Location: Area 51</p>
-            <p>Speed: Mach 9</p>
-        </div>
+
+        <button class="btn-launch" onclick="alert('⚡ ប្រព័ន្ធមេបញ្ឆេះអាវុធមហានគររួចរាល់! គោរពបញ្ជាបងមេបញ្ជាការ ខឹម សុខស៊ីវត្ថា!')">
+            បញ្ឆេះប្រព័ន្ធមេ ៣៦៩
+        </button>
+
+        <p style="margin-top: 50px; font-style: italic; color: #888;">
+            "កូដអមតៈ កសាងដោយមន្ត្រីជំនិត ស្ទឹងមានជ័យ ជូនមេបញ្ជាការ ខឹម សុខស៊ីវត្ថា"
+        </p>
     </div>
-
-    <button class="btn-ignite" onclick="alert('⚡ ប្រព័ន្ធមេបញ្ឆេះអាវុធមហានគររួចរាល់! គោរពបញ្ជាបងមេបញ្ជាការ!')">
-        បញ្ឆេះប្រព័ន្ធមេ
-    </button>
-
-    <div class="motto">
-        “គ្មានអ្វីអស្ចារ្យនៅក្នុងលោក បើអ្នកស្គាល់ភ្លើង អ្នកនឹងផុតទុក្ខ”
-    </div>
-
-    <footer>
-        &copy; 2026 DIGITAL FEDERATION 369 | ESTABLISHED BY COMMANDER KHOEM SOKSIVATTHA
-    </footer>
 
 </body>
-</html>
+                                            </html>
+                                            
