@@ -1,48 +1,73 @@
-<!DOCTYPE html>
-<html lang="km">
-<head>
-    <meta charset="UTF-8">
-    <title>The 369 Blue & Red Empire</title>
     <style>
-        body { font-family: 'Courier New', Courier, monospace; background-color: #111; color: white; }
-        .empire-container { padding: 20px; border: 2px solid gold; }
+        body { font-family: 'Courier New', Courier, monospace; background-color: #111; color: white; margin: 0; padding: 0; }
+        .empire-container { padding: 20px; border: 2px solid gold; margin: 20px; }
         
-        /* អាណាចក្ររុក្ខជាតិ - ពណ៌ខៀវ */
-        .blue-botanic { color: #00CCFF; border-left: 5px solid #00CCFF; margin-bottom: 20px; padding-left: 15px; }
+        h1 { text-align: center; color: gold; text-transform: uppercase; font-size: 20px; margin-bottom: 30px; }
+        h2 { border-bottom: 2px solid white; display: inline-block; padding-bottom: 5px; font-size: 16px; }
+        p { margin: 10px 0; font-size: 14px; padding-left: 20px; }
+        strong { color: white; }
+
+        /* --- ផ្នែកកែសម្រួលពិសេស៖ ដាក់រូបតុក្កតាកាន់កាប់ --- */
+
+        /* អាណាចក្ររុក្ខជាតិ - ពណ៌ខៀវ (មានរូបមេបញ្ជាការខៀវ) */
+        .blue-botanic { 
+            position: relative; 
+            color: #00CCFF; 
+            padding-left: 55px; /* ទុកកន្លែងសម្រាប់រូប */
+            margin-bottom: 30px;
+        }
         
-        /* អាណាចក្រសត្វលោក - ពណ៌ក្រហម */
-        .red-animal { color: #FF0000; border-left: 5px solid #FF0000; padding-left: 15px; }
-        
-        h1 { text-align: center; color: gold; text-transform: uppercase; }
-        h2 { border-bottom: 1px solid white; display: inline-block; }
+        /* ឆ្នូតពណ៌ខៀវ */
+        .blue-botanic::before {
+            content: '';
+            position: absolute;
+            left: 35px; /* ទីតាំងឆ្នូត */
+            top: 0;
+            bottom: 0;
+            width: 8px; /* ទទឹងឆ្នូត */
+            background-color: #00CCFF;
+            border-radius: 4px;
+        }
+
+        /* រូបតុក្កតាកាន់កាប់ (Blue Commander) */
+        .blue-botanic::after {
+            content: '👮'; /* រូបតុក្កតាមេបញ្ជាការ */
+            position: absolute;
+            left: 0; /* ទីតាំងរូប */
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px; /* ទំហំរូប */
+        }
+
+        /* ------------------------------------------- */
+
+        /* អាណាចក្រសត្វលោក - ពណ៌ក្រហម (មានរូបមេបញ្ជាការក្រហម) */
+        .red-animal { 
+            position: relative; 
+            color: #FF0000; 
+            padding-left: 55px; /* ទុកកន្លែងសម្រាប់រូប */
+        }
+
+        /* ឆ្នូតពណ៌ក្រហម */
+        .red-animal::before {
+            content: '';
+            position: absolute;
+            left: 35px; /* ទីតាំងឆ្នូត */
+            top: 0;
+            bottom: 0;
+            width: 8px; /* ទទឹងឆ្នូត */
+            background-color: #FF0000;
+            border-radius: 4px;
+        }
+
+        /* រូបតុក្កតាកាន់កាប់ (Red Commander) */
+        .red-animal::after {
+            content: '💂'; /* រូបតុក្កតាមេបញ្ជាការ (ទាហានយាម) */
+            position: absolute;
+            left: 0; /* ទីតាំងរូប */
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px; /* ទំហំរូប */
+        }
     </style>
-</head>
-<body>
-
-    <div class="empire-container">
-        <h1>The 369 Master Command Center</h1>
-
-        <div class="blue-botanic">
-            <h2>THE 369 BLUE BOTANIC EMPIRE</h2>
-            <p><strong>[Blue-3]</strong>: រុក្ខជាតិទឹក (សាប/ប្រៃ), ឈូក, កោងកាង, ស្មៅសមុទ្រ...</p>
-            <p><strong>[Blue-6]</strong>: រុក្ខជាតិលើគោក, ដើមដូង, ដើមត្នោត, ឈើប្រណីត, រុក្ខជាតិបន្លែ...</p>
-            <p><strong>[Blue-9]</strong>: រុក្ខជាតិអមតៈ, ឱសថបុរាណ, វល្លិតោង, ជីវិតបៃតងក្នុងកូដខៀវ...</p>
-        </div>
-
-        <hr>
-
-        <div class="red-animal">
-            <h2>THE 369 RED ANIMAL DOMINION</h2>
-            <p><strong>[Red-3]</strong>: សត្វក្នុងទឹក និងក្នុងរន្ធ, ត្រីរាប់លាន, បង្កង, អន្ទង់, សត្វក្រោមដី...</p>
-            <p><strong>[Red-6]</strong>: សត្វលើគោក និងក្នុងព្រៃ, គោ, ខ្លា, តោ, ដំរី, សត្វចម្រុះជាតិ...</p>
-            <p><strong>[Red-9]</strong>: សត្វហើរ និងបក្សាវិទ្យុ, ឥន្ទ្រី, ក្ងោក, សត្វដែលមានបញ្ញាខ្ពស់...</p>
-        </div>
-    </div>
-
-    <script>
-        console.log("Commander Khem Soksivatha: 369 Empire Online.");
-        console.log("Status: 1,107,000,000 Red Souls & Infinite Blue Flora Processed.");
-    </script>
-
-</body>
-</html>
+    
