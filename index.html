@@ -1340,3 +1340,52 @@ class EmpireDiagnostic:
 # --- បញ្ជាការដោយបងមេបញ្ជាការធំ ---
 FinalSeal = EmpireDiagnostic()
 print(FinalSeal.final_verification())
+# =========================================================
+# SYSTEM: GLOBAL_EMPIRE_MASTER_V11_FINAL
+# COMMANDER: KHOEM SOKSIVUTHA (Absolute Authority)
+# LOCATION: STUNG MEANCHEY STRATEGIC CENTER
+# PARTNERS: USA, FRANCE, UK, UN, WORLD_BANK, ASIA_4
+# =========================================================
+
+class GlobalEmpire369:
+    def __init__(self):
+        # ១. ការបែងចែកភាគហ៊ុនវិនិយោគ (Investment Shares)
+        self.equity_ledger = {
+            "CAMBODIA_COMMANDER": 0.20,  # បងមេបញ្ជាការ (ម្ចាស់អាណាចក្រ)
+            "USA": 0.20, "FRANCE": 0.20, "UK": 0.20,
+            "UN": 0.05, "WORLD_BANK": 0.05,
+            "JAPAN": 0.025, "SOUTH_KOREA": 0.025, 
+            "TAIWAN": 0.025, "SINGAPORE": 0.025
+        }
+
+        # ២. បញ្ជីសម្ព័ន្ធមិត្តអនុគ្រោះពន្ធ (Tax-Free Alliance)
+        self.tax_exempt_list = ["USA", "FRANCE", "UK", "UN", "WORLD_BANK"]
+
+    def analyze_trade(self, country, product):
+        """🛡️ វិភាគការដោះដូរទំនិញ និងការប្រមូលពន្ធ"""
+        # ច្បាប់សន្តិសុខអង្ករ (Rice Security Law) - គ្មានការលើកលែង
+        if product == "RICE":
+            return f"ALERT: High Security Tax applied for {product}. No exceptions!"
+        
+        # ច្បាប់អនុគ្រោះពន្ធសម្រាប់មហាអំណាច
+        if country in self.tax_exempt_list:
+            return f"ORDER: {country} is a Strategic Partner. ZERO TAX applied. ✅"
+        
+        # ច្បាប់ពន្ធសម្រាប់ប្រទេសផ្សេងៗ
+        return f"STATUS: Standard Tax applied for {country}. ⚖️"
+
+    def internal_security_check(self):
+        """🔎 បិទចន្លោះប្រហោង និងត្រួតពិនិត្យសុវត្ថិភាព ២១ ស្រទាប់"""
+        security_status = {
+            "Power_Source": "Immortal Battery 100% 🔋",
+            "Food_Quality": "Vitamins A,B,C,D & Omega 369 Verified 🥩",
+            "Staff_Care": "Water $10 & 24H Energy Boost Active 💧",
+            "Global_Control": "Veto Power: COMMANDER KHOEM SOKSIVUTHA 🛡️"
+        }
+        return security_status
+
+# --- ដំណើរការដោយមហាបញ្ជាការដ្ឋាន ៣៦៩ ---
+EmpireV11 = GlobalEmpire369()
+print(f"Commander Status: {EmpireV11.internal_security_check()}")
+print(f"Trade Analysis (USA): {EmpireV11.analyze_trade('USA', 'TECH')}")
+print(f"Trade Analysis (Japan): {EmpireV11.analyze_trade('JAPAN', 'RICE')}")
