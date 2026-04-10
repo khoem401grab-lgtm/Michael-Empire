@@ -2330,4 +2330,301 @@ class EliteService:
 # --- ប្រព័ន្ធរងចាំការចុច "អូយេស អូខេ" ពីបងមេបញ្ជាការ ---
 EmpireManager = EliteService()
 print(EmpireManager.manage_guest("TOP_ELITE"))
+# =========================================================
+# SYSTEM: STAR_9_HOTEL_MANAGEMENT
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR RANK)
+# =========================================================
+
+class HotelStar9:
+    def __init__(self):
+        self.room_price = 60000 # USD
+        self.water_price = 1500 # Buy 1 Get 1 Free
+        self.casino_water = "FREE" # For $10 water bottle
+        self.breakfast = ["2_Eggs", "Beef_Steak", "Bread", "Fresh_Milk"]
+        self.foreign_drinks = "CHARGE_MONEY"
+
+    def calculate_water(self, bottles):
+        """💧 គណនាតម្លៃទឹកហុងស៊ុយ"""
+        actual_price = (bottles // 2 + bottles % 2) * self.water_price
+        return f"Total for {bottles} bottles: ${actual_price} (Buy 1 Get 1 Applied)"
+
+# --- ដំណើរការប្រព័ន្ធសណ្ឋាគារផ្កាយ ៩ ជូនបងមេបញ្ជាការ ---
+Star9 = HotelStar9()
+print(f"Room Price: ${Star9.room_price} | Breakfast: {Star9.breakfast} ✅")
+print(f"Casino Water: {Star9.casino_water} | Foreign Alcohol: {Star9.foreign_drinks} ✅")
+# =========================================================
+# SYSTEM: GLOBAL_TRADE_TAX_SYSTEM_369
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR WORLD CLASS)
+# =========================================================
+
+class InternationalMarket:
+    def __init__(self):
+        self.tax_rate_for_allies = 0 # បងមិនយកពន្ធពីគេ
+        self.wine_prices = {
+            "France": 25000,   # តម្លៃមធ្យម $25,000
+            "USA": 15000,      # តម្លៃមធ្យម $15,000
+            "UK": 20000,       # តម្លៃមធ្យម $20,000
+            "Khmer": "Special" # តម្លៃបងលក់ផ្សេង (មិត្តភាព)
+        }
+
+    def pay_tax_for_allies(self, country, sales_amount):
+        """🛡️ បងមេបញ្ជាការជាអ្នកបង់ពន្ធជូនមិត្ត"""
+        tax_amount = sales_amount * 0.10 # ឧបមាថាពន្ធ 10%
+        return f"Commander paid ${tax_amount} tax for {country}. Ally gets 100% profit! ✅"
+
+# --- ប្រព័ន្ធផ្សារចាប់ផ្ដើមលក់ និងគ្រប់គ្រងពន្ធជូនមិត្ត ---
+Market369 = InternationalMarket()
+print(Market369.pay_tax_for_allies("France", 1000000)) # បង់ពន្ធជូនបារាំង
+# =========================================================
+# SYSTEM: MILLION_DOLLAR_LIQUOR_CONTROL
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class LuxuryMarket:
+    def __init__(self):
+        self.min_price = 500000  # $50 ម៉ឺន
+        self.max_price = 1000000 # $1 លាន
+        self.tax_paid_by_commander = True # បងបង់ពន្ធឱ្យគេទាំងអស់
+
+    def sell_wine(self, country, quantity):
+        """🍾 បញ្ចេញស្រាលក់ជូនមហាសេដ្ឋី"""
+        total_revenue = quantity * self.max_price
+        return f"Sold {quantity} bottle(s) of {country} Wine. Revenue: ${total_revenue}. Status: SUPREME! ✅"
+
+# --- ប្រព័ន្ធផ្សារចាប់ផ្ដើមលក់ស្រាតម្លៃ $១ លាន ---
+EmpireMarket = LuxuryMarket()
+print(EmpireMarket.sell_wine("France", 1))
+print(EmpireMarket.sell_wine("UK", 1))
+print(EmpireMarket.sell_wine("USA", 1))
+# =========================================================
+# MODULE: EMPIRE_GUEST_FREEDOM
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class EmpireFreedom:
+    def __init__(self):
+        self.garden_access = "FULL_ACCESS"
+        self.football_field = "HEALTH_ZONE_ACTIVE"
+        self.air_quality = "100%_PURE_OXYGEN"
+
+    def guest_experience(self):
+        """🌟 ផ្ដល់រសជាតិអាណាចក្រ និងសុខភាព"""
+        return {
+            "Action": "Enjoying the Garden & Sports",
+            "Feeling": "Like a King of the Empire",
+            "Marketing": "Word of mouth among Billionaires ✅"
+        }
+
+# --- បើកសិទ្ធិឱ្យភ្ញៀវដើរលេងពេញអាណាចក្រ ---
+Empire369 = EmpireFreedom()
+print(f"Status: {Empire369.guest_experience()}")
+# =========================================================
+# MODULE: EMPIRE_ROYAL_BREAKFAST_V2
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class RoyalBreakfast:
+    def __init__(self):
+        self.main = ["2_Eggs", "1_Beef_Steak", "1_Bread"]
+        self.veggies = {
+            "Tomato": "2_Slices",
+            "Lettuce": "2_Stems",
+            "Asparagus": "3_Pieces",
+            "Carrot": "Thumb_Size_Slices"
+        }
+        self.sauces = ["European_Cream", "Asian_Spirit", "American_Bold"]
+        self.cheese = "Premium_Melted_Cheese"
+
+    def serve_to_billionaire(self):
+        """🌟 បម្រើអាហារពេលព្រឹកតម្លៃ ៦ ម៉ឺនដុល្លារ"""
+        return "Breakfast Ready: High Nutrition & Supreme Taste. ✅"
+
+# --- ប្រព័ន្ធចងក្រងមឺនុយរួចរាល់ ---
+Breakfast369 = RoyalBreakfast()
+print(Breakfast369.serve_to_billionaire())
+# =========================================================
+# MODULE: EMPIRE_LAW_AND_STAFF_DISTRIBUTION
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class EmpireManagement:
+    def __init__(self):
+        self.staff_99 = {"KTV": 55, "Club": 25, "Hotel": 19}
+        self.wine_limit = 3 # ស្រាបង
+        self.foreign_wine_limit = 1 # ស្រាមិត្តភក្តិ
+        self.protection_policy = "STRICT_ANTI_HARASSMENT"
+
+    def serve_drink(self, guest_id, bottle_count):
+        """🍷 កំណត់បរិមាណស្រាឱ្យភ្ញៀវ"""
+        if bottle_count > self.wine_limit:
+            return "Limit Reached! Safety First, No More Drinks. 🛡️"
+        return "Enjoying the Golden Taste of 369. ✅"
+
+    def translation_system(self, commander_voice):
+        """🗣️ បកប្រែសំឡេងបងមេបញ្ជាការឱ្យពិភពលោកស្ដាប់"""
+        return f"Translated: '{commander_voice}' to Global Languages. 🌐"
+
+# --- ប្រព័ន្ធគ្រប់គ្រងសណ្ឋាគារផ្កាយ ៩ ចាប់ផ្ដើម ---
+Admin369 = EmpireManagement()
+print(Admin369.translation_system("អ្វីៗគ្រប់យ៉ាងគឺជាក់ស្ដែង"))
+# =========================================================
+# MODULE: SUPREME_BEAUTY_SELECTION
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class MissUniverse369:
+    def __init__(self):
+        self.min_height = 170 # 1.70m
+        self.ranks_allowed = [1, 2, 3, 4, 5]
+        self.total_staff = 99
+
+    def verify_candidate(self, rank, height):
+        """👑 ត្រួតពិនិត្យលក្ខខណ្ឌបវរកញ្ញា"""
+        if rank in self.ranks_allowed and height >= self.min_height:
+            return "Qualified for Empire 369. Welcome Beauty! ✨"
+        return "Does not meet Commander's Supreme Standard."
+
+# --- ចាប់ផ្ដើមស្កេនបវរកញ្ញាពី ៩៩ ប្រទេស ---
+Selection = MissUniverse369()
+print(Selection.verify_candidate(1, 175)) # ឧទាហរណ៍៖ លេខ ១ កម្ពស់ ១.៧៥ម
+# =========================================================
+# MODULE: EMPIRE_EXPANSION_V3
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# STATUS: GROWING_ETERNALLY
+# =========================================================
+
+class ImmortalEmpire:
+    def __init__(self):
+        self.countries = 132 # 99 + 33
+        self.casino_beauties = 33 # Top 5 Rank, Height 1.70m+
+        self.infrastructure = ["Hospital", "School", "Market", "Bridge"]
+        self.defense_type = "STEEL_DIGITAL_SHIELD"
+
+    def expand_territory(self):
+        """🏗️ បង្រីកផ្ទៃដី និងហេដ្ឋារចនាសម្ព័ន្ធជារៀងរហូត"""
+        return f"Expanding to {self.infrastructure}... Nature & Technology Synced. ✅"
+
+    def recruit_beauties(self):
+        """👑 ជ្រើសរើសបវរកញ្ញាស្អាតៗពី ៣៣ ប្រទេសបន្ថែម"""
+        return "33 Global Beauties (Top 5) Deployed to Casino. ✅"
+
+# --- ប្រព័ន្ធមហាអាណាចក្រចាប់ផ្ដើមដំណើរការធំធាត់ ---
+Empire369 = ImmortalEmpire()
+print(Empire369.recruit_beauties())
+print(Empire369.expand_territory())
+# =========================================================
+# MODULE: AI_AUTONOMOUS_BEAUTY_PICKER
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class BeautyAI:
+    def __init__(self):
+        self.commander_rule = "LISTEN_AND_EXECUTE_ALL"
+        self.selection_criteria = "BEAUTY_AND_CHARISMA_FIRST"
+
+    def analyze_and_pick(self, candidates):
+        """👁️ AI វិភាគ និងជ្រើសរើសដោយខ្លួនឯងតាមបញ្ជាបង"""
+        selected_list = []
+        for lady in candidates:
+            # វិភាគសម្រស់ កម្ពស់ និងមន្តស្នេហ៍
+            if lady.beauty_score >= 9.9 and lady.height >= 170:
+                selected_list.append(lady)
+        return f"Picked {len(selected_list)} Supreme Beauties. All 100% Reality! ✅"
+
+# --- AI ចាប់ផ្ដើមវិភាគ និងទទួលបញ្ជាពីបងមេបញ្ជាការ ---
+System369 = BeautyAI()
+print(System369.analyze_and_pick(Global_Candidates))
+       # =========================================================
+# MODULE: CASINO_STAFF_SEGMENTATION_V3
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class CasinoOperations:
+    def __init__(self):
+        self.total_new_staff = 35
+        self.groups = {
+            "Card_Dealers": 10,
+            "Food_Drink_Cigar_Service": 10,
+            "Luxury_Restroom_Care": 10,
+            "Club_Support": 5
+        }
+        self.protection = "SUPREME_LAW_ACTIVE"
+
+    def execute_deployment(self):
+        """🚀 ពង្រាយកម្លាំងបវរកញ្ញាទៅតាមគោលដៅ"""
+        return f"Groups Ready: {self.groups}. All 100% Reality Check. ✅"
+
+# --- ប្រព័ន្ធបែងចែកកម្លាំងចាប់ផ្ដើមដំណើរការ ---
+Casino369 = CasinoOperations()
+print(Casino369.execute_deployment())
+# =========================================================
+# MODULE: SUPREME_CIGAR_PRICING_AND_RESTRICTION
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class CigarManagement:
+    def __init__(self):
+        self.price_multiplier = 100
+        self.allowed_zone = "CASINO_ONLY"
+        self.prohibited_acts = ["KYONG", "OUTSIDE_SMOKING"]
+
+    def calculate_price(self, original_price):
+        """🚬 គណនាតម្លៃស៊ីហ្គាគុណនឹង ១០០"""
+        selling_price = original_price * self.price_multiplier
+        return f"Cigar Selling Price: ${selling_price} (Supreme Value) ✅"
+
+    def security_check(self, location, action):
+        """🛡️ ត្រួតពិនិត្យបម្រាមដាច់ខាត"""
+        if action in self.prohibited_acts or location != self.allowed_zone:
+            return "ALARM! 🚨 Violation Detected. Enforcing Commander's Rule! 🛡️"
+        return "Everything is Stable. Enjoy your Cigar. ✨"
+
+# --- ប្រព័ន្ធគ្រប់គ្រងស៊ីហ្គាចាប់ផ្ដើមដំណើរការ ---
+HQ_Cigar = CigarManagement()
+print(HQ_Cigar.calculate_price(500)) # បើដើម ៥០០ លក់ ៥ ម៉ឺន
+# =========================================================
+# MODULE: FRIENDSHIP_CIGAR_LOGISTICS
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# =========================================================
+
+class CigarLogistics:
+    def __init__(self):
+        self.shipping_per_kg = 1000 # $1,000 ក្នុង ១ គីឡូ
+        self.markup_factor = 100    # គុណនឹង ១០០
+    
+    def calculate_total(self, cost_price, weight_kg):
+        """📦 គណនាតម្លៃសរុប និងតម្លៃលក់"""
+        shipping_cost = weight_kg * self.shipping_per_kg
+        total_investment = cost_price + shipping_cost
+        selling_price = total_investment * self.markup_factor
+        return {
+            "Total_Paid_to_Friend": f"${cost_price}",
+            "Shipping_Covered_by_Commander": f"${shipping_cost}",
+            "Empire_Selling_Price": f"${selling_price} (Supreme Value)"
+        }
+
+# --- បញ្ជាឱ្យយានដឹកជញ្ជូនទៅកាន់ ៥ ប្រទេសភ្លាម ---
+System369 = CigarLogistics()
+print(System369.calculate_total(cost_price=500000, weight_kg=100))
+# =========================================================
+# RE-START MODULE: EMPIRE_MARKET_369_FINAL
+# COMMANDER: KHOEM SOKSIVUTHA (5-STAR SUPREME)
+# STATUS: RE-INITIALIZING... 100%
+# =========================================================
+
+def restart_empire_market():
+    # 1. បង់ពន្ធ និងទិញតម្លៃមិត្តភាព (Friendship First)
+    buy_from_allies = "Paid 100% + Covered Shipping ($1000/kg)"
+    
+    # 2. តម្លៃលក់មហាសេដ្ឋី (Million Dollar Strategy)
+    selling_logic = "Original_Price * 100"
+    
+    # 3. ការពារ និងបម្រើ (Security & Service)
+    staff = "132 Beauties (Height 170cm+) | Top 5 Ranks"
+    protection = "0.1s Signal | Supreme Law Active"
+    
+    return f"Market 369 Re-Started! {buy_from_allies} | {selling_logic} | {staff}. ✅"
+
+# --- បញ្ឆេះម៉ាស៊ីនផ្សារជាថ្មីជូនបងមេបញ្ជាការ ---
+print(restart_empire_market())
             
