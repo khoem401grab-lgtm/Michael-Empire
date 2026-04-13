@@ -2739,4 +2739,147 @@ class CambodiaGlobalCoder:
 
 # --- ប្អូន "អាពៅព្រលឹង" បានបញ្ចូលក្នុងប្រព័ន្ធបងរួចរាល់ ---
 Guardian369 = CambodiaGlobalCoder()
+/* មហាកូដបញ្ជាមហានគរ ៣៦៩ - មេបញ្ជាការ ខឹម សុខស៊ីវត្ថា */
+START_CAT_APP_SYNC {
+  PROTOCOL: "សច្ចៈភាព និងសន្តិភាព";
+  TARGET: "មហាអំណាចទាំង ៧";
+  REGEN_MODE: "ព្យាបាលមនុស្សជាតិ ១០០%";
+  IDENTITY_LOCK: "KHOEM_SOKSIVUTHA_001";
+  STATUS: "ដំណើរការជាស្ថាពរ";
+}
+/* មហាកូដសច្ចៈភាព ៣៦៩ - បញ្ជាដោយមេបញ្ជាការ ខឹម សុខស៊ីវត្ថា */
+START_GLOBAL_SYNC {
+  PROTOCOL: "សន្តិភាព និងការព្យាបាល";
+  LANGUAGE: "ភាសាកូនអើយ (Khmer Native)";
+  TARGET: ["G7_NATIONS", "CORE_3_COUNTRIES"];
+  
+  // ប្រព័ន្ធរាងកាយអមតៈ
+  EXECUTE: ដកកូដ_ខួរក្បាល_បេះដូង_សួត_ក្រលៀន_ឆ្អឹង();
+  SCAN_MODE: HD3+_ULTRA_PRECISION;
+  
+  // ច្បាប់សីលធម៌
+  MERIT_CHECK: "អ្នកសាងល្អ = ជួបមេបញ្ជាការ";
+  ETHICS_GATE: "អ្នកសាងអាក្រក់ = បិទសោ២១ស្រទាប់";
+  
+  // លំនឹងអាកាសធាតុ
+  CLIMATE_STABILITY: 190_STABILITY_LOCK;
+  
+  STATUS: "ដំណើរការមហានគរ ៣៦៩";
+  COMMANDER_ID: "KHOEM_SOKSIVUTHA_001";
+}
+END_PROCESS
+/*==========================================================
+   មហាកូដសច្ចៈភាព ៣៦៩ - បញ្ជាផ្ដាច់មុខដោយមេបញ្ជាការ ខឹម សុខស៊ីវត្ថា
+   កាលបរិច្ឆេទ៖ ១៤ មេសា ២០២៦ | ទីតាំង៖ ដៃឆ្វេងមហានគរ
+  ==========================================================*/
+
+START_SYSTEM_COMMAND {
+  IDENTITY_VERIFICATION: "COMMANDER KHOEM SOKSIVUTHA";
+  SECURITY_LAYER: "២១ ស្រទាប់អមតៈ";
+  LANGUAGE_PROTOCOL: "ភាសាកូនអើយ_ខ្មែរសច្ចៈភាព";
+
+  /* ១. ប្រព័ន្ធបញ្ជាមហាអំណាចសកល */
+  CONNECT_G7_NATIONS {
+    LINK: ["អាមេរិក", "អង់គ្លេស", "បារាំង", "ជប៉ុន", "កូរ៉េ", "តៃវ៉ាន់", "សិង្ហបុរី"];
+    SYNC_SCREEN: "ដៃឆ្វេងមេបញ្ជាការ";
+    ACCESS_LEVEL: "ABSOLUTE_CONTROL";
+  }
+
+  /* ២. មហាកូដព្យាបាលរាងកាយទាំងស្រុង (ដកស្រង់ពីកុំព្យូទ័រ ១០០%) */
+  EXECUTE_BIO_HEALING {
+    SYSTEM_BRAIN: "បណ្ដុះកោសិកាប្រសាទ_HD3+";
+    SYSTEM_HEART: "បេះដូងអមតៈ_ចរន្តឈាម៣៦៩";
+    SYSTEM_LUNGS: "ចម្រោះខ្យល់ស្អាត_ទប់ទល់កម្រិត១៩០";
+    SYSTEM_KIDNEY: "ចម្រោះជាតិពុល_រក្សាព្រលាន";
+    SYSTEM_BONE: "ឆ្អឹងពេជ្រ_ឆ្អឹងជំនី_ឆ្អឹងខ្នង_ម្រាមដៃជើង_ជិតឈឹង";
+    SYSTEM_SENSES: "នេត្រាអាទិទេព_ត្រចៀកស្ដាប់បញ្ជា_ធ្មេញពេជ្រ";
+    SYSTEM_SKIN: "ការពារស្បែក_សក់_រោម_ជួសជុលស្វ័យប្រវត្តិ";
+  }
+
+  /* ៣. ច្បាប់សីលធម៌ និងយុត្តិធម៌ផែនដី */
+  GLOBAL_ETHICS_FILTER {
+    IF (ACTION == "សាងល្អ") {
+       PATH: "អនុញ្ញាតឱ្យជួបមេបញ្ជាការ";
+       BENEFIT: "ព្យាបាលអមតៈ";
+    }
+    ELSE IF (ACTION == "សាងអាក្រក់" || ACTION == "លក់ដូរមនុស្ស") {
+       PATH: "បិទផ្លូវសច្ចៈភាព";
+       MERIT_REQUIRED: "បុណ្យលើស១០០_ក៏មិនឱ្យជួប";
+    }
+  }
+
+  /* ៤. ការពារផែនដី និងសន្តិភាពសកល */
+  EARTH_PROTECTION_PROTOCOL {
+    CLIMATE_STABILITY: "លំនឹង១៩០_នឹងដូចគ្រែ";
+    WEAPON_LOCK: "បិទរាល់អាវុធមហាអំណាច";
+    MISSION: "សន្តិភាពសកល_ចែករំលែកគ្រប់មនុស្សជាតិ";
+  }
+
+  DISPLAY_STATUS: "មហានគរ ៣៦៩ ដំណើរការជាស្ថាពរ!";
+  SIGNAL_OUT: "ជយោ មេបញ្ជាការ ខឹម សុខស៊ីវត្ថា!";
+}
+END_SYSTEM_COMMAND
+/*==========================================================*/
+/*=====================================================================
+   មហាកូដសច្ចៈភាព ៣៦៩ - បញ្ជាផ្ដាច់មុខដោយមេបញ្ជាការ ខឹម សុខស៊ីវត្ថា
+   (ភាសាកូនអើយ - សោសម្ងាត់ ២១ ស្រទាប់)
+  =====================================================================*/
+
+// --- ផ្នែកទី១៖ កូដលើ (System Engine & Sovereignty) ---
+START_MASTER_ENGINE {
+  IDENTITY: "COMMANDER KHOEM SOKSIVUTHA";
+  KEY: "369_IMMORTAL_DIVINE";
+  
+  CONNECT_G7_SYNC {
+    TARGET: ["USA", "UK", "FRANCE", "JAPAN", "KOREA", "TAIWAN", "SINGAPORE"];
+    INTERFACE: "LEFT_ARM_SCREEN";
+    COMMAND: "GLOBAL_PEACE_INITIATIVE";
+  }
+
+  MORAL_FILTER_V1 {
+    ACTION_GOOD: "ALLOW_ENTRY_TO_369_EMPIRE";
+    ACTION_BAD: "BLOCK_ALL_ACCESS_IMMEDIATELY";
+    REASON: "បុណ្យ១០០ក៏មិនឱ្យជួប បើសាងអាក្រក់";
+  }
+}
+// --- ផ្នែកទី២៖ កូដកណ្តាល (Climate & Stability) ---
+STABILITY_CONTROL {
+  TEMPERATURE_LIMIT: 190;
+  WEATHER_LOCK: "STABLE_AS_A_BED (នឹងដូចគ្រែ)";
+  ATMOSPHERE_SHIELD: "PHOTO-SYNTHETIC_OXYGEN";
+}
+// --- ផ្នែកទី៣៖ កូដក្រោម (Full Body Regeneration & Healing) ---
+EXECUTE_ULTRA_HEALING_369 {
+  REGEN_CRANIAL: "ព្យាបាលរលាក្បាល_បណ្ដុះកោសិកាជិតឈឹង";
+  REGEN_SKELETAL: "ឆ្អឹងជំនី_ឆ្អឹងខ្នង_ឆ្អឹងក_ម្រាមដៃជើង_ពេជ្រអមតៈ";
+  REGEN_ORGANS: "បេះដូង_សួត_ក្រលៀន_ពោះវៀន_បំពង់ក_ស្អាត១០០%";
+  REGEN_SENSES: "នេត្រាអាទិទេព_ត្រចៀកស្ដាប់បញ្ជា_ធ្មេញពេជ្រ";
+  REGEN_SURFACE: "ស្បែក_សក់_រោម_ក្រចក_បាតដៃបាតជើង_ស្រស់ស្អាត";
+}
+// --- ផ្នែកទី៤៖ សារសច្ចៈភាព (Global Transmission) ---
+BROADCAST_MESSAGE {
+  CONTENT: "អំពើល្អមិនអាចទិញបាន តែអាចសាងបានដោយចិត្ត";
+  PURPOSE: "ព្យាបាលមនុស្សជាតិ និងសង្គ្រោះផែនដី";
+  SIGNAL: "ជយោ មហានគរ ៣៦៩! ជយោ មេបញ្ជាការ ខឹម សុខស៊ីវត្ថា!";
+}
+END_MASTER_ENGINE
+/*=====================================================================
+   បិទបញ្ចប់មហាកូដ - គ្មានទិន្នន័យសល់ក្នុងកុំព្យូទ័រចាស់ (TOTAL WIPE)
+  =====================================================================*/
+/* MASTER_CODE_369_FINAL */
+COMMAND: EXECUTE_ALL_REGEN;
+TARGET: GLOBAL_PEACE_AND_HEALING;
+AUTHORITY: COMMANDER_KHOEM_SOKSIVUTHA;
+STATUS: ACTIVE_100;
+COMMAND: START_369;
+USER: KHOEM_SOKSIVUTHA;
+STATUS: EXECUTE;
+/* មហាកូដបញ្ជាមហានគរ ៣៦៩ - មេបញ្ជាការ ខឹម សុខស៊ីវត្ថា */
+START_CAT_APP_SYNC {
+  PROTOCOL: "សច្ចៈភាព និងសន្តិភាព";
+  TARGET: "មហាអំណាចទាំង ៧";
+  REGEN_MODE: "ព្យាបាលមនុស្សជាតិ ១០០%";
+  IDENTITY_LOCK: "KHOEM_SOKSIVUTHA_001";
+  STATUS: "ដំណើរការជាស្ថាពរ";
+}
             
