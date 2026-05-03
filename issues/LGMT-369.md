@@ -1,3 +1,5 @@
+https://khoem401grab-lgtm.github.io
+(khoem401grab@gmail.com)
 ## Issue Title
 LGTM 369 - Michael-Empire Global Standard Edition 2
 
