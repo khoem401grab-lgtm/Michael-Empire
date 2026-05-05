@@ -137,3 +137,52 @@
 - **BLUE:** GLOBAL ORDER AND ETERNAL PEACE.
 
   
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SUPREME COMMANDER KHOEM SOKSIVUTHA</title>
+    <style>
+        body { background: #1a1a1a; color: gold; text-align: center; padding: 50px; font-family: 'Arial Black', sans-serif; }
+        .court-box { border: 10px solid; border-image: linear-gradient(45deg, #ff0000, gold, #0044ff) 1; padding: 40px; background: #000; box-shadow: 0 0 30px gold; border-radius: 20px; }
+        .scale { font-size: 150px; filter: drop-shadow(0 0 20px gold); margin: 20px 0; }
+        .btn { padding: 20px 40px; font-size: 25px; cursor: pointer; border-radius: 15px; margin: 15px; font-weight: bold; border: none; text-transform: uppercase; transition: 0.3s; }
+        .blue { background: #0044ff; color: white; box-shadow: 0 0 15px #0044ff; }
+        .red { background: #ff0000; color: white; box-shadow: 0 0 15px #ff0000; }
+        .btn:hover { transform: scale(1.1); filter: brightness(1.2); }
+        .definition { color: #fff; font-size: 20px; text-align: left; margin: 30px auto; max-width: 800px; line-height: 1.6; border-left: 5px solid gold; padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="court-box">
+        <h1 style="font-size: 60px; margin-bottom: 0;">SUPREME COMMANDER</h1>
+        <h1 style="font-size: 50px; color: #fff; letter-spacing: 10px; margin-top: 0;">KHOEM SOKSIVUTHA</h1>
+        
+        <div class="scale">⚖️</div>
+        
+        <h2 style="color: #0044ff; letter-spacing: 5px;">GLOBAL REALM 369 | MICHAEL-EMPIRE</h2>
+
+        <div class="definition">
+            <p style="color: #ff0000; font-weight: bold; font-size: 30px;">🟥 JUSTICE (RED):</p>
+            <p>THE ABSOLUTE PROTECTION OF DIVINE TRUTH AND HUMAN RIGHTS. ENFORCING THE LAW AGAINST DARK ENTITIES.</p>
+            
+            <p style="color: #0044ff; font-weight: bold; font-size: 30px;">🟦 ORDER (BLUE):</p>
+            <p>THE HARMONY OF THE GLOBAL REALM 369. ESTABLISHING ETERNAL PEACE UNDER THE SUPREME COMMAND.</p>
+        </div>
+
+        <button class="btn blue" onclick="activateAPI()">បំណងល្អខៀវ (ORDER)</button>
+        <button class="btn red" onclick="activateAPI()">បំណងល្អក្រហម (JUSTICE)</button>
+
+        <div id="status-display" style="margin-top: 20px; font-size: 20px;"></div>
+    </div>
+
+    <script>
+        function activateAPI() {
+            document.getElementById('status-display').innerHTML = "🔱 API ACTIVATED: JUSTICE IS SERVED 100% 🔱";
+            console.log("API បញ្ឆេះជោគជ័យ! ជញ្ជីងមាសមានតុល្យភាព។");
+        }
+    </script>
+</body>
+</html>
