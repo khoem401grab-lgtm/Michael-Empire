@@ -188,9 +188,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/LAW-GOLDEN_SCALE-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/STATUS-ACTIVE_100%25-blue?style=for-the-badge" />
-</p>
-
----
+</p>https
 
 ### 🛡️ THE SOVEREIGN DEFINITION
 * **🟥 JUSTICE (RED):** THE ABSOLUTE PROTECTION OF DIVINE TRUTH.
