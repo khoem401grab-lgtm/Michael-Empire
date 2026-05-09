@@ -1,0 +1,15 @@
+{
+  "name": "@khoem401grab-lgtm/michael-empire-core",
+  "version": "3.9.9",
+  "description": "មហានគរ ៣៦៩ - ម្ចាស់ដើម KHOEM SOKSIVUTHA",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoem401grab-lgtm/Michael-Empire.git"
+  },
+  "author": "KHOEM SOKSIVUTHA",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
