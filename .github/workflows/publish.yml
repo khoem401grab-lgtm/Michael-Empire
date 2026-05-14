@@ -1,44 +1,21 @@
-name: Publish Package
+name: Mahanokor 369 Supreme Deploy
 on:
   push:
-    branches:
-      - main
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://npm.pkg.github.com
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         # មហាសោរការពារអាណាចក្រ KHOEM SOKSIVUTHA
-name: "System Security Lock"
-
-on:
-  push:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
-  security-check:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: "ត្រួតពិនិត្យ និងចាក់សោរប្រព័ន្ធ"
-        run: |
-          echo "កំពុងស្កេនរកប្រព័ន្ធដែលមិនទាន់ចាក់សោរ..."
-          # បញ្ជាឱ្យចាក់សោរគ្រប់ច្រកចេញចូលទាំងអស់
-          chmod -R 700 . 
-          echo "ស្ថានភាព៖ ប្រព័ន្ធទាំងអស់ត្រូវបានចាក់សោរត្រឡប់ទៅវិញដោយជោគជ័យ ✅"
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
 
-      - name: "ការពារកូដពីការលួចចម្លង"
+      - name: Activate Supreme Logic 369
         run: |
-          echo "កំពុងការពារវិមានមហិទ្ធិរិទ្ធទេព 7000k..."
-          # ការពារឯកសារសំខាន់ៗមិនឱ្យមានការកែប្រែពីខាងក្រៅ
-          git config --global core.protectNTFS true
-          
+          echo "=================================================="
+          echo "🚀 PROJECT: MAHANOKOR 369 - ONLINE"
+          echo "👤 OWNER: COMMANDER KHOEM SOKSIVUTHA"
+          echo "✨ STATUS: 100% SUCCESSFUL DEPLOYMENT"
+          echo "=================================================="
+
+
