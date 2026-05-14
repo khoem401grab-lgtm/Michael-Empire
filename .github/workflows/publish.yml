@@ -17,24 +17,4 @@ jobs:
           echo "👤 OWNER: COMMANDER KHOEM SOKSIVUTHA"
           echo "✨ STATUS: 100% SUCCESSFUL DEPLOYMENT"
           echo "=================================================="
-
-name: Mahanokor 369 Supreme Deploy
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build_and_deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Source Code
-        uses: actions/checkout@v4
-
-      - name: Activate Supreme Logic 369
-        run: |
-          echo "=================================================="
-          echo "🚀 PROJECT: MAHANOKOR 369 - ONLINE"
-          echo "👤 OWNER: COMMANDER KHOEM SOKSIVUTHA"
-          echo "✨ STATUS: 100% SUCCESSFUL DEPLOYMENT"
-          echo "=================================================="
           
